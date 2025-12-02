@@ -7,8 +7,8 @@ on:
         type: string
         default: .github/workflows/typos-config.toml
 jobs:
-  run:
-    name: Spell Check with Typos
+  check:
+    name: Typos
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
