@@ -76,4 +76,5 @@ runs:
         git status
         git apply $patch_name
         git status
-        echo "AOP registry setup completed."
+        echo "AOP registry setup completed. if echo 'AOPTools ====>' then aop is success."
+        flutter --version
