@@ -76,5 +76,11 @@ runs:
         git status
         git apply $patch_name
         git status
+        
+        # 清除flutter_tools缓存，强制重新编译
+        echo "Clearing flutter_tools cache to force recompilation..."
+        rm -rf bin/cache/flutter_tools.stamp
+        rm -rf bin/cache/flutter_tools.snapshot
+        
         echo "AOP registry setup completed. if echo 'AOPTools ====>' then aop is success."
         flutter --version
